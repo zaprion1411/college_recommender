@@ -16,7 +16,7 @@ def clean_category_input(category):
     return cat_map.get(category.upper(), category.upper())
 
 # Load data
-df = pd.read_csv("JOSAA - NIT+System R5 Cut-Off - WE WON ACADEMY 2024 - GEN-Both.csv")
+df = pd.read_csv("Jossa_councelling.csv")
 
 # Title
 st.title("🎓 College Recommender - JOSAA Counselling")
