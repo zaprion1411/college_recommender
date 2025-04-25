@@ -15,7 +15,7 @@ def get_sheet_name(category, gender):
 
 # === LOAD DATA ===
 def load_data(sheet_name):
-    xls = pd.ExcelFile("JOSAA - NIT+System R5 Cut-Off - WE WON ACADEMY 2024.xlsx")
+    xls = pd.ExcelFile("JOSAA - NIT+System R5 Cut-Off.xlsx")
     if sheet_name not in xls.sheet_names:
         st.error(f"Sheet '{sheet_name}' not found in the file.")
         return pd.DataFrame()
