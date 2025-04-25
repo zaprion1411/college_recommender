@@ -10,8 +10,13 @@ def get_sheet_name(category, gender):
         "SC": "SC",
         "ST": "ST"
     }
+
+    if category.upper() == "GEN" and gender.lower() == "male":
+        return "GEN-Both"
+    
     gen_suffix = "Both" if gender.lower() == "male" else "Female"
     return f"{cat_map.get(category.upper(), category.upper())}_{gen_suffix}"
+
 
 # === LOAD DATA ===
 def load_data(sheet_name):
